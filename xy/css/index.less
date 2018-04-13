@@ -1,0 +1,151 @@
+.page {
+    font-size: 12px;
+    margin: 20px;
+    margin-left: 15px;
+    color: #333;
+    height: 30px;
+    .first,
+    .prv,
+    .next,
+    .last {
+        transition: all 0.2s linear;
+        padding: 0 10px;
+        height: 28px;
+        border: 1px solid #d9d9d9;
+        line-height: 28px;
+        background: #FAF1E8;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .pageul {
+        li {
+            float: left;
+            a,
+            span {
+                display: inline-block;
+                transition: all 0.2s linear;
+                padding: 0 10px;
+                height: 28px;
+                border: 1px solid #d9d9d9;
+                line-height: 28px;
+                background: #FAF1E8;
+                margin-right: 10px;
+                color: #333;
+            }
+            .on {
+                background: #000;
+                color: #FFF;
+            }
+            a:hover {
+                background: #000;
+                color: #FFF;
+            }
+        }
+    }
+    .first:hover,
+    .prv:hover,
+    .next:hover,
+    .last:hover,
+    .page-number button:hover {
+        background: #333;
+        color: #FFF;
+    }
+    .page-number {
+        .enter {
+            padding: 0 10px;
+            height: 28px;
+            border: 1px solid #d9d9d9;
+            line-height: 28px;
+            background: #FAF1E8;
+            margin-right: 10px;
+            input {
+                border: 1px solid #ccc;
+                width: 35px;
+                font-size: 12px;
+                padding: 2px 0;
+                vertical-align: middle;
+                text-align: center;
+            }
+        }
+        button {
+            transition: all 0.2s linear;
+            padding: 0 10px;
+            height: 28px;
+            border: 1px solid #d9d9d9;
+            line-height: 28px;
+            background: #FAF1E8;
+            margin-right: 10px;
+            cursor: pointer;
+            box-sizing: content-box;
+        }
+    }
+}
+
+#sitemap {
+    padding: 8px 0;
+    font-size: 0;
+    h3 {
+        line-height: 30px;
+        font-size: 14px;
+        a {
+            transition: color 0.2s linear;
+        }
+        a:hover {
+            color: #FF5050;
+        }
+    }
+}
+
+#lanmujieshao {
+    font-size: 14px;
+    color: #333;
+    .tit {
+        padding: 8px 0;
+    }
+}
+
+.content {
+    border: 1px solid #C7BDB1;
+    margin: 20px auto;
+    text-align: center;
+    background: #FAF1E8;
+    height: 100%;
+    .list {
+        ul {
+            li {
+                overflow: hidden;
+                text-align: left;
+                padding: 15px;
+                border-bottom: 1px dashed #C8C4AA;
+                img {
+                    float: left;
+                    width: 128px;
+                    height: 86px;
+                    margin-right: 15px;
+                }
+                h3 {
+                    font-size: 16px;
+                    margin-bottom: 6px;
+                    font-family: "Microsoft YaHei";
+                    strong {
+                        font-weight: bold;
+                        a {
+                            color: #2D2D2D;
+                        }
+                        a:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #808080;
+                    a {
+                        color: #F31F09;
+                    }
+                }
+            }
+        }
+    }
+}
