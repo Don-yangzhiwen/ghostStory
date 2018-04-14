@@ -14,8 +14,23 @@ $(function () {
     id: obj.id,
     page: '1'
   }, function (data) {
-    string = data.text.replace(/\r\n/g, "<br>")
+    var string = data.text.replace(/\r\n/g, "<br>")
     $('.text p').html(string);
+    var option = {
+      pageCount: 5,
+      callback: function (index) {
+        getRequset({
+          id: obj.id,
+          page: index
+        }, function (data) {
+          if (data.ret_code != -1) {
+            var string = data.text.replace(/\r\n/g, "<br>")
+            $('.text p').html(string);
+          }
+        });
+      }
+    };
+    new PageNumber(option);
   });
   //请求到数据
   function getRequset(option, callback) {

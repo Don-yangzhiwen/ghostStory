@@ -8,8 +8,8 @@ var assetRev = require('gulp-asset-rev'); //添加版本号
 //清除目录
 gulp.task('clean', function () {
   return gulp.src('dist/*', {
-      read: false
-    })
+    read: false
+  })
     .pipe(clean())
 });
 
@@ -47,7 +47,7 @@ gulp.task('assetRev', function () {
 gulp.task('default', function (db) {
   //同步进行
   runSequence(
-    'clean', ['minifyCss', 'uglify', 'copyImages'], 'assetRev',
+    'clean', ['copyImages'], 'assetRev',
     db
   );
 });

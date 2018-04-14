@@ -25,8 +25,91 @@ body {
   padding: 0 7px;
 }
 .nav ul li a {
+  -webkit-transition: color 0.1s linear;
   transition: color 0.1s linear;
 }
 .nav ul li a:hover {
   color: #FF5050;
+}
+.page {
+  font-size: 12px;
+  margin: 20px;
+  margin-left: 15px;
+  color: #333;
+  height: 30px;
+}
+.page .first,
+.page .prv,
+.page .next,
+.page .last {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding: 0 10px;
+  height: 28px;
+  border: 1px solid #d9d9d9;
+  line-height: 28px;
+  background: #FAF1E8;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.page .pageul li {
+  float: left;
+}
+.page .pageul li a,
+.page .pageul li span {
+  display: inline-block;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding: 0 10px;
+  height: 28px;
+  border: 1px solid #d9d9d9;
+  line-height: 28px;
+  background: #FAF1E8;
+  margin-right: 10px;
+  color: #333;
+}
+.page .pageul li .on {
+  background: #000;
+  color: #FFF;
+}
+.page .pageul li a:hover {
+  background: #000;
+  color: #FFF;
+}
+.page .first:hover,
+.page .prv:hover,
+.page .next:hover,
+.page .last:hover,
+.page .page-number button:hover {
+  background: #333;
+  color: #FFF;
+}
+.page .page-number .enter {
+  padding: 0 10px;
+  height: 28px;
+  border: 1px solid #d9d9d9;
+  line-height: 28px;
+  background: #FAF1E8;
+  margin-right: 10px;
+}
+.page .page-number .enter input {
+  border: 1px solid #ccc;
+  width: 35px;
+  font-size: 12px;
+  padding: 2px 0;
+  vertical-align: middle;
+  text-align: center;
+}
+.page .page-number button {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding: 0 10px;
+  height: 28px;
+  border: 1px solid #d9d9d9;
+  line-height: 28px;
+  background: #FAF1E8;
+  margin-right: 10px;
+  cursor: pointer;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }

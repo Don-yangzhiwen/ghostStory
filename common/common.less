@@ -33,3 +33,86 @@ body {
         }
     }
 }
+
+.page {
+    font-size: 12px;
+    margin: 20px;
+    margin-left: 15px;
+    color: #333;
+    height: 30px;
+    .first,
+    .prv,
+    .next,
+    .last {
+        transition: all 0.2s linear;
+        padding: 0 10px;
+        height: 28px;
+        border: 1px solid #d9d9d9;
+        line-height: 28px;
+        background: #FAF1E8;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .pageul {
+        li {
+            float: left;
+            a,
+            span {
+                display: inline-block;
+                transition: all 0.2s linear;
+                padding: 0 10px;
+                height: 28px;
+                border: 1px solid #d9d9d9;
+                line-height: 28px;
+                background: #FAF1E8;
+                margin-right: 10px;
+                color: #333;
+            }
+            .on {
+                background: #000;
+                color: #FFF;
+            }
+            a:hover {
+                background: #000;
+                color: #FFF;
+            }
+        }
+    }
+    .first:hover,
+    .prv:hover,
+    .next:hover,
+    .last:hover,
+    .page-number button:hover {
+        background: #333;
+        color: #FFF;
+    }
+    .page-number {
+        .enter {
+            padding: 0 10px;
+            height: 28px;
+            border: 1px solid #d9d9d9;
+            line-height: 28px;
+            background: #FAF1E8;
+            margin-right: 10px;
+            input {
+                border: 1px solid #ccc;
+                width: 35px;
+                font-size: 12px;
+                padding: 2px 0;
+                vertical-align: middle;
+                text-align: center;
+            }
+        }
+        button {
+            transition: all 0.2s linear;
+            padding: 0 10px;
+            height: 28px;
+            border: 1px solid #d9d9d9;
+            line-height: 28px;
+            background: #FAF1E8;
+            margin-right: 10px;
+            cursor: pointer;
+            box-sizing: content-box;
+        }
+    }
+}
