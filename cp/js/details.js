@@ -34,7 +34,7 @@ $(function () {
   });
   //请求到数据
   function getRequset(option, callback) {
-    var url = 'http://route.showapi.com/955-2';
+    var url = 'https://route.showapi.com/955-2';
     var parmas = {
       showapi_appid: '36610',
       showapi_sign: 'f05f78810a8443fb8e007a267523e30c',
