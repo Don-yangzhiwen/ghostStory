@@ -20,7 +20,7 @@ function getRequset(option, callback) {
   var id = option.id;
   var type = option.type;
   var page = option.page;
-  var url = 'http://route.showapi.com/955-' + id;
+  var url = 'https://route.showapi.com/955-' + id;
   var parmas = {
     showapi_appid: '36610',
     showapi_sign: 'f05f78810a8443fb8e007a267523e30c',
